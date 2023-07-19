@@ -1,0 +1,275 @@
+/*استدعاء للخط */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;500&display=swap');
+
+* {/*يتم تطبيقها على جميع العناصر */
+    font-family: 'Poppins', sans-serif;/*عائلة الخط التم استدعائه*/
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*بخلي البوكس ضمن او داخل حدود بعض*/
+    scroll-behavior: smooth; /*بخلي السكرول الطف بصفحة*/
+}
+
+/*start header*/
+
+header{
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;/* بخلي الهيدر ثابت بصفحة*/
+    z-index: 999;/*ما بتخلي شي يطلع فوق الهيدر*/
+    display: flex;/*بيجي معها جتسفاي كونتت لتوزيع وترتيب العناصر بشكل متساوي*/
+    justify-content: space-between;/*بعطي مسافة بين الاولاد بالهيدر*//*مسافات متساوية*/
+    align-items: center;/*بوسط العناصر*//*ما بقدر اعملها الا لما يكون عندي ديسبلاي فليكس*/
+    padding: 10px 200px;/*بعمل مسافة 10 فوق وتحت و200 ع الجوانب*/
+}
+
+.logo{
+    text-decoration: none;/*بشيل الخط الي تحت الكلام*/
+    color: #3a6cf4;
+    text-transform: uppercase;/*بتعمل الحروف كبيتل */
+    font-weight: 700;/*لعرض الخط*/
+    font-size: 1.5em;/*لحجم الخط */
+}
+
+.navigation a {
+    color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    padding-left: 30px;/*تباعد بين العناصر على حهة اليسار*/
+}
+
+.navigation a:hover {
+    color: black;
+}
+
+/*end header*/
+
+/*start main*/
+
+section{
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;/*اقل طول لازم يكون كذا*//*view port*/
+    display: flex;
+    align-items: center;
+    background: url(images/background.jpg) no-repeat;/*للصورة مع عدم التكرار نو ريبيت*/
+    background-size: cover;/*بتغطي الخلفية بشكل المناسب مع السكشن*/
+    background-position: center;/*بتوسط الخلفية */
+    background-attachment: fixed;/*بتخلي الصورة ثابتة والمحتوي بطلع فوقيها بالسكرول*/
+}
+
+.main div h2 {
+    color: #fff;
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+.main div h2 span {
+    display: inline-block;/*عشان اقدر اعطيها مارقن*/
+    margin-top: 10px;
+    color: #4e9eff;
+    font-size: 2.1em;
+    font-weight: 595;
+}
+
+.main div h3{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 350;
+    letter-spacing: 1px;/*مسافة بين الاحرف*/
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: #fff;
+    text-decoration: none;
+    background-color: #3a6cf4;
+    font-size: 1em;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.8s ease;/*بعطي مدة لزيادة حجم الزر*/
+}
+
+.main-btn:hover {
+    background-color: #0a49f6;
+    transform: scale(1.1);/*بكبر حجم العنصر عند تمرير الماوس عليه*/   
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.7em;
+    padding-right: 30px;
+
+}
+
+.linkedin-icon:hover{
+    color: #0A66C2;
+    transition: 0.9s ease;
+}
+
+.instagram-icon:hover{
+    color: rgb(255 11 150);
+    transition: 0.9s ease;
+}
+
+.facebook-icon:hover{
+    color: #466cba;
+    transition: 0.9s ease;
+}
+
+.github-icon:hover{
+    color: #787ddc;
+    transition: 0.9s ease;
+}
+
+/*end main*/
+
+/*start services*/
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;/*بخلي العناصر بشكل افقي او عمودب كلوم*/
+}
+
+.card {
+  background-color: #fff;  
+  width: 22.25em;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);/*بعمل ظل*/
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: #3a6cf4;
+    font-size: 7em;
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+
+}
+
+.info h3 {
+    color: #3a6cf4;
+    margin: 10px ;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.info p {
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+/*end services*/
+
+/*start Project*/
+
+.Projects {
+    background-color: #000016;
+    /* width: auto; */
+}
+
+.Projects .content{
+    margin-top: 30px;
+    flex-wrap: wrap; /*بتحافظ على حجم العناصر وبنزلو تحت بعض بتصغير*/
+    flex-direction: row;/*بخلي العناصر بشكل افقي او عمودب كلوم*/
+
+
+}
+
+.Project-card {
+    background-color: #fff;
+    border: 1px solid #fff ;
+    min-height: 14em;
+    width: 17.4em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.8s ease;
+}
+
+.Project-card:hover {
+    transform: scale(1.1);
+}
+
+.Project-card:hover .Project-image {
+    opacity: 0.9;
+}
+
+.Project-image img {
+    width: 100%;
+}
+
+.Project-info {
+    padding: 0.9em;
+}
+
+.Project-category {
+    font-size: 0.8em;
+    color: #000;
+    font-weight: 550;
+    margin-bottom: 20px;
+}
+
+.Project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight:  900;
+    font-size: 0.8em;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #3a6cf4;
+}
+
+.more-details:hover {
+    color: rgb(61, 9, 110);
+}
+
+/*end Project*/
+
+/*start contact*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*end contact */
