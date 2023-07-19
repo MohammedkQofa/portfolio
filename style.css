@@ -261,15 +261,210 @@ section{
 
 /*start contact*/
 
+.card-Contact .icon{
+    font-size: 4.5em;
+}
 
+.card-Contact .info h3 {
+    color: #000;
+}
 
-
-
-
-
-
-
-
-
+.card-Contact .info p {
+    font-size: 1.3em;
+    font-weight: 350;
+}
 
 /*end contact */
+
+
+/*start footer*/
+
+.footer {
+    background-color: #000016;
+    color: #fff;
+    padding: 1em 0 0.8em 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.footer-title span {
+    color: #3a6cf4;
+}
+
+.footer .social-icons a{
+    font-size: 1.4em;
+    padding: 0 17px 0 0;
+}
+
+/*end footer */
+
+/*//////////////////////////////////////////////*/
+/* 
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+     
+    }
+} */
+
+/* النمط الافتراضي */
+/* * {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+header {
+    padding: 10px 5%;
+}
+
+.logo {
+    text-decoration: none;
+    color: #3a6cf4;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation a {
+    color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    padding-left: 20px;
+} */
+
+/*//////////////////////////////////////////////*/
+
+/* تحسين الهيدر عند الأجهزة الصغيرة */
+@media (max-width: 767px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navigation {
+        margin-top: 10px;
+    }
+    .navigation a {
+        padding: 10px 5px;
+    }
+}
+
+
+/* تحسين العرض الرئيسي عند الأجهزة الصغيرة */
+@media (max-width: 767px) {
+    .main div h2 {
+        font-size: 1.8em;
+    }
+    .main div h2 span {
+        font-size: 2em;
+    }
+    .main div h3 {
+        font-size: 1.5em;
+    }
+    .main-btn {
+        font-size: 1em;
+    }
+}
+
+
+/* تحسين الخدمات عند الأجهزة الصغيرة */
+@media (max-width: 767px) {
+    .title {
+        font-size: 2em;
+    }
+    .card {
+        width: 100%;
+        margin: 15px 0;
+    }
+}
+
+
+/* تحسين المشاريع عند الأجهزة الصغيرة */
+@media (max-width: 767px) {
+    .Project-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
+/* تحسين تواصل معنا عند الأجهزة الصغيرة */
+@media (max-width: 767px) {
+    .card-Contact .info h3 {
+        font-size: 1.2em;
+    }
+    .card-Contact .info p {
+        font-size: 1em;
+    }
+}
+
+
+/* تحسين التذييل عند الأجهزة الصغيرة */
+@media (max-width: 767px) {
+    .footer-title {
+        font-size: 0.5em;
+    }
+    .footer .social-icons a {
+        font-size: 0.9em;
+    }
+}
